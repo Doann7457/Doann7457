@@ -1,0 +1,8 @@
+hostname = restore-access.indream.app
+
+(.+restore-access.indream.app.+)(id=\d{5,10}) url echo-response text/json echo-response 
+{
+  "data": {
+    "premiumAccess": true
+  }
+}
